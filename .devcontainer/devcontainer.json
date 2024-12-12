@@ -1,0 +1,16 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java-postgres
+{
+	"name": "Simple Chromia",
+	"dockerFile": "Dockerfile",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ChromaWay.rell-language-extension",
+                "redhat.vscode-yaml"
+            ]
+        }
+    }, // Forward Chromia ports to host
+    "forwardPorts": [7740, 7750]
+}
